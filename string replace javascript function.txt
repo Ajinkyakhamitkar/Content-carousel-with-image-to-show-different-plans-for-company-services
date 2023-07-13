@@ -1,0 +1,13 @@
+function moo_script_footer(){ ?>
+
+<script type="text/javascript">
+	jQuery(window).on('load', function() {
+		setTimeout(function () {
+        jQuery(".hr-tab-subtitle").html(jQuery(".hr-tab-subtitle").html().replace("products", "produkter"));
+        }, );
+});
+</script>
+
+<?php } 
+
+add_action('wp_footer', 'moo_script_footer'); 
